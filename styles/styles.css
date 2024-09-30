@@ -3,14 +3,15 @@ body {
   background-color: #020925;
   font-family: "Kanit", sans-serif;
 }
-body .gallery {
+
+.gallery {
   max-width: 1366px;
-  padding: 70px 130px;
+  padding: 60px 130px;
 }
-body .gallery .box {
+.gallery .box {
   padding: 6px;
 }
-body .gallery .card {
+.gallery .card {
   position: relative;
   border-radius: 0px;
   border: none;
@@ -18,7 +19,7 @@ body .gallery .card {
   height: 100%;
   color: #000;
 }
-body .gallery .card .tag {
+.gallery .card .tag {
   position: absolute;
   right: 10px;
   top: 10px;
@@ -28,17 +29,17 @@ body .gallery .card .tag {
   padding: 5px 10px;
   border-radius: 6px;
 }
-body .gallery .card .card-img-top {
+.gallery .card .card-img-top {
   height: 240px;
   object-fit: cover;
 }
-body .gallery .card .card-body {
+.gallery .card .card-body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
 }
-body .gallery .card .card-text {
+.gallery .card .card-text {
   margin-bottom: 30px;
 }
 
@@ -48,10 +49,99 @@ body .gallery .card .card-text {
   border-radius: 0px;
   border: none;
 }
+.btn:hover {
+  background-color: #00D9C2;
+  opacity: 0.8;
+}
+
+.title {
+  text-align: center;
+  max-width: 545px;
+  padding: 25px 0px;
+  margin-bottom: 60px;
+  color: #FFFFFF;
+}
+
+.banner {
+  width: 100%;
+  height: 530px;
+  margin-bottom: 100px;
+  display: flex;
+}
+.banner img {
+  width: 50%;
+  object-fit: cover;
+}
+.banner h2 {
+  line-height: 48px;
+}
+.banner .banner-text-container {
+  width: 50%;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0px 50px;
+  gap: 10px;
+}
+.banner .banner-text-container p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #000;
+}
+
+.banner-2 {
+  flex-direction: row-reverse;
+}
 
 @media (max-width: 1200px) {
-  body .gallery {
+  .gallery {
     padding: 70px 37px;
+  }
+}
+@media (max-width: 991.98px) {
+  .title {
+    font-size: 20px;
+    padding: 0px;
+    margin-bottom: 30px;
+  }
+  /* CARDS */
+  .gallery {
+    padding: 30px 0px;
+  }
+  /* BANNERS */
+  .banner {
+    height: auto;
+    margin-bottom: 50px;
+  }
+  .banner img {
+    width: 100%;
+    height: 175px;
+  }
+  .banner .banner-text-container {
+    width: 100%;
+    padding: 16px;
+  }
+  .banner .banner-text-container h2 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .banner .banner-text-container p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .banner-1 {
+    flex-direction: column;
+  }
+  .banner-2 {
+    flex-direction: column;
+  }
+}
+@media (max-width: 575.98px) {
+  .container {
+    width: 100%;
+    padding: 0px 35px !important;
   }
 }
 
